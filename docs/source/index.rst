@@ -14,4 +14,4 @@ Contents
 .. toctree::
 
    common_columns
-   api
+   licenses
