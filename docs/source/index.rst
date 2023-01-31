@@ -13,5 +13,5 @@ Contents
 
 .. toctree::
 
-   common_columns
+   common_conventions
    licenses
