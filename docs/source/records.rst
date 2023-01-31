@@ -61,3 +61,31 @@ Specify the states of DOI assigned by datacite. It must be populated with one of
 
 * ``Draft``
 * ``Findable``
+
+doi_issued_date (MA)
+-----------------------
+
+It represent the date that the doi is assigned by datacite, must be populated with the format ``YYYY-MM-DD`` once the doi is assigned by datacite.
+
+Example
+~~~~~~~
+.. code-block:: sql
+
+UPDATE records SET doi_issued_date = '2023-01-31';
+
+publication_date (MA)
+-----------------------
+datacite:date (R) with datacite:dateType:Available
+
+The format is ``YYYY-MM-DD``, should be populated with the value of column ``updated_at`` when doi_status is changed to ``Findable`` if user does not provide it.
+
+Example (datacite)
+~~~~~~~~~~~~~~~~~~~
+.. code-block:: json
+
+  "dates": [
+    {
+      "date": "2023-01-30",
+      "dateType": "Available"
+    },
+  ]
