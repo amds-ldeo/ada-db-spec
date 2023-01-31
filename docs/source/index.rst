@@ -13,5 +13,5 @@ Contents
 
 .. toctree::
 
-   usage
+   common_columns
    api
