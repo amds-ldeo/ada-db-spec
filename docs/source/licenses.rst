@@ -2,6 +2,9 @@ licenses
 ========
 The table `licenses <https://schema.astromat.org/ada/tables/licenses.html>`_ is to hold different license information allowed by ADA system.
 
+Licenses allowed by ADA
+-----------------------
+
 ======================= ============================================================================= ============================================
 liecense_abbrev         license_name                                                                  license_url
 ======================= ============================================================================= ============================================
@@ -11,3 +14,14 @@ CC-BY-SA-4.0  	         Creative Commons Attribution-ShareAlike 4.0 Internationa
 CC0-1.0  	            Creative Commons Zero v 1.0 Universal	                                       https://spdx.org/licenses/CC0-1.0
 CC-BY-4.0  	            Creative Commons Attribution 4.0 International	                              https://spdx.org/licenses/CC-BY-4.0
 ======================= ============================================================================= ============================================
+
+Metadata mappings
+-----------------
+
+======================= =======================
+ADA Column              Datacite property   
+======================= =======================
+liecense_abbrev         datacite:rightsIdentifier
+license_name            datacite:Rights
+license_url             datacite:rightsURI
+======================= =======================
