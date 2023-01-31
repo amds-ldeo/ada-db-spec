@@ -4,6 +4,7 @@ The table `licenses <https://schema.astromat.org/ada/tables/licenses.html>`_ is 
 
 Licenses allowed by ADA
 -----------------------
+All licenses are seleted from `SPDX License List <https://spdx.org/licenses/>`_
 
 ======================= ============================================================================= ============================================
 liecense_abbrev         license_name                                                                  license_url
@@ -17,6 +18,8 @@ CC-BY-4.0  	            Creative Commons Attribution 4.0 International	         
 
 Metadata mappings
 -----------------
+**namespace abbreviation used**
+``datacite``: https://schema.datacite.org/meta/kernel-4.4/
 
 ======================= =======================
 ADA Column              Datacite property   
