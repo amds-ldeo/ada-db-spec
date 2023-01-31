@@ -64,6 +64,10 @@ general_types allowed by ADA are part of datacite resourceTypeGeneral controlled
 * ``Workflow``
 * ``Other``
 
+
+.. note::
+   It has default value ``Dataset``, don't need to populate for SAMIS data product.
+
 specific_type (M)
 -----------------------
 
@@ -81,9 +85,6 @@ Example (datacite)
       "resourceTypeGeneral": "Dataset"
     }
   ]
-
-.. note::
-   It has default value ``Dataset``, don't need to populate for SAMIS data product.
 
 description (MA)
 -----------------------
