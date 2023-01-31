@@ -28,3 +28,15 @@ liecense_abbrev         datacite:rightsIdentifier
 license_name            datacite:Rights
 license_url             datacite:rightsURI
 ======================= =======================
+
+Example
+~~~~~~~
+.. code-block:: json
+
+  "rightsList": [
+    {
+      "rightsIdentifier":"CC-BY-SA-4.0",
+      "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "rightsUri": "https://spdx.org/licenses/CC-BY-SA-4.0"
+    }
+  ]
