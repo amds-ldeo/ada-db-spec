@@ -68,6 +68,7 @@ specific_type (M)
 -----------------------
 
 datacite:resourceType (M)
+
 samis:dataProductType
 
 Example (datacite)
@@ -76,7 +77,7 @@ Example (datacite)
 
   "types": [
     {
-      "resourceType: "EMPA Secondary Electron Image",
+      "resourceType": "EMPA Secondary Electron Image",
       "resourceTypeGeneral": "Dataset"
     }
   ]

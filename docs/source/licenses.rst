@@ -30,8 +30,8 @@ license_name            datacite:Rights
 license_url             datacite:rightsURI
 ======================= =======================
 
-Example
-~~~~~~~
+Example (datacite)
+~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: json
 
   "rightsList": [
