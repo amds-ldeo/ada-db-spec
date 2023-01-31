@@ -1,13 +1,8 @@
-Welcome to Lumache's documentation!
-===================================
+###############################################################################
+ADA Database Guidelines for devlopers
+###############################################################################
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+These guidelines describe `the ADA database <https://schema.astromat.org/ada/index.html>` usage for the developers.
 
 .. note::
 

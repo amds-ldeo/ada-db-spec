@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'ADA Database Guidelines for Developers'
-copyright = '2021, Graziella'
-author = 'Graziella'
+copyright = '2023, Peng Ji'
+author = 'Peng Ji'
 
 release = '0.1'
 version = '0.1.0'
