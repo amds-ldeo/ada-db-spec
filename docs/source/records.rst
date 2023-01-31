@@ -1,0 +1,63 @@
+records
+========
+The table `records <https://schema.astromat.org/ada/tables/records.html>`_ is to hold unambiguous digital resources, etc. dataset.
+
+**term conventions**
+
+Mandatory (**M**)
+  The property must always be present in the metadata. An empty value for the property is not allowed.
+
+Mandatory if Applicable (**MA**)
+  When the property value can be obtained it must be present.
+
+Recommended (R)
+  The use of the property is recommended.
+
+Optional (O)
+  It is not important whether the property is used or not, but if used it may provide complementary information about the resource
+
+**schema reference**
+
+``samis``: https://osiris-rex.atlassian.net/wiki/spaces/SDPD/pages/449544195/Bundle+Delivery+Documents+BDD
+
+``datacite``: https://schema.datacite.org/meta/kernel-4.4/
+
+.. note::
+
+   Each row in the table ``records`` represent an unique SAMIS Data product.
+
+
+title (M)
+-----------------
+
+datacite:title (M)
+
+samis:dataProduct:title
+
+general_type (M)
+-----------------------
+
+datacite:resourceTypeGeneral (M)
+
+.. note::
+   It has default value ``Dataset``, don't need to populate for SAMIS data product.
+
+description (MA)
+-----------------------
+
+datacite:description (R)
+
+samis:dataProduct:abstract
+
+record_doi (MA)
+-----------------------
+
+It must be populated once the doi is assigned by datacite.
+
+doi_status (MA)
+-----------------------
+
+Specify the states of DOI assigned by datacite. It must be populated with one of the following controlled list once the doi is assigned by datacite.
+
+* ``Draft``
+* ``Findable``

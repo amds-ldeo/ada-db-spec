@@ -14,4 +14,5 @@ Contents
 .. toctree::
 
    common_conventions
+   records
    licenses

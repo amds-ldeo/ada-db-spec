@@ -18,7 +18,7 @@ CC-BY-4.0  	            Creative Commons Attribution 4.0 International	         
 
 Metadata mappings
 -----------------
-**namespace abbreviation**
+**schema references**
 
 ``datacite``: https://schema.datacite.org/meta/kernel-4.4/
 
