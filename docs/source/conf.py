@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'ADA Database Guidelines for Developers'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
