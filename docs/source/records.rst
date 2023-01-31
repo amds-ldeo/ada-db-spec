@@ -34,10 +34,52 @@ datacite:title (M)
 
 samis:dataProduct:title
 
+Example (datacite)
+~~~~~~~~~~~~~~~~~~~
+.. code-block:: json
+
+  "titles": [
+    {
+      "title": "SAMIS data product title.",
+    }
+  ]
+
 general_type (M)
 -----------------------
 
 datacite:resourceTypeGeneral (M)
+
+general_types allowed by ADA are part of datacite resourceTypeGeneral controlled list:
+
+* ``Collection``
+* ``Dataset``
+* ``Event``
+* ``Image``
+* ``InteractiveResource``
+* ``Model``
+* ``PhysicalObject``
+* ``Service``
+* ``Software``
+* ``Text``
+* ``Workflow``
+* ``Other``
+
+specific_type (M)
+-----------------------
+
+datacite:resourceType (M)
+samis:dataProductType
+
+Example (datacite)
+~~~~~~~~~~~~~~~~~~~
+.. code-block:: json
+
+  "types": [
+    {
+      "resourceType: "EMPA Secondary Electron Image",
+      "resourceTypeGeneral": "Dataset"
+    }
+  ]
 
 .. note::
    It has default value ``Dataset``, don't need to populate for SAMIS data product.
@@ -48,6 +90,17 @@ description (MA)
 datacite:description (R)
 
 samis:dataProduct:abstract
+
+Example (datacite)
+~~~~~~~~~~~~~~~~~~~
+.. code-block:: json
+
+  "descriptions": [
+    {
+      "description": "SAMIS data product abstract.",
+      "descriptionType": "Abstract"
+    }
+  ]
 
 record_doi (MA)
 -----------------------
@@ -71,7 +124,7 @@ Example
 ~~~~~~~
 .. code-block:: sql
 
-UPDATE records SET doi_issued_date = '2023-01-31';
+   UPDATE records SET doi_issued_date = '2023-01-31';
 
 publication_date (MA)
 -----------------------
