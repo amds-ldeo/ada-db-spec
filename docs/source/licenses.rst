@@ -1,6 +1,6 @@
 licenses
 ========
-The table `licenses<https://schema.astromat.org/ada/tables/licenses.html>`_ is to hold different license information allowed by ADA system.
+The table `licenses <https://schema.astromat.org/ada/tables/licenses.html>`_ is to hold different license information allowed by ADA system.
 
 ======================= ============================================================================= ============================================
 liecense_abbrev         license_name                                                                  license_url
