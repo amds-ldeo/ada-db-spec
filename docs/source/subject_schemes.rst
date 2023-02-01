@@ -169,6 +169,6 @@ To hold the JSON schema for different subject schemes. It will be used to create
       }]
    }
 
-   .. note::
-   The schemas showed here are all based on the product.yaml from a SAMIS's presentation. They will be updated once we have SAMIS final specification in site.
+.. note::
+The schemas showed here are all based on the product.yaml from a SAMIS's presentation. They will be updated once we have SAMIS final specification in site.
    
