@@ -1,6 +1,6 @@
 funders
 ========
-The table `licenses <https://schema.astromat.org/ada/tables/funders.html>`_ is to hold different funder information allowed by ADA system.
+The table `funders <https://schema.astromat.org/ada/tables/funders.html>`_ is to hold different funder information allowed by ADA system.
 
 funders allowed by ADA
 -----------------------
