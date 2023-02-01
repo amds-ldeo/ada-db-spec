@@ -21,3 +21,4 @@ Contents
    file_extensions
    funders
    licenses
+   name_entities
