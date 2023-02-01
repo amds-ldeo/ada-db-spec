@@ -15,4 +15,6 @@ Contents
 
    common_conventions
    records
+   subject_schemes
+   record_subjects
    licenses
