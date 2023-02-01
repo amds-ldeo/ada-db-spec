@@ -17,5 +17,6 @@ Contents
    records
    subject_schemes
    record_subjects
+   external_identifier_schemes
    funders
    licenses
