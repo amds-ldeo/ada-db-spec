@@ -31,6 +31,8 @@ All schemes can be found in SAMIS data product metadata.
 * ``analysis.instrument``
 * ``analysis.laboratory``
 
+.. _ada:subjectSchema:
+
 subject_scheme_template (M)
 ---------------------------
 To hold the JSON schema for different subject schemes. It will be used to create JSON object for column ``subject`` in the table ``record_subjects``.

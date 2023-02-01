@@ -26,3 +26,6 @@ subject_scheme_id (M)
 
 subject (M)
 -----------
+Populate the data with the appropriate subject scheme and corresponding template.
+
+* :ref:`ada:subjectSchema`
