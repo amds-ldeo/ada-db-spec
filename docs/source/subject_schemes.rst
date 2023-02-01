@@ -18,6 +18,8 @@ Recommended (R)
 Optional (O)
   It is not important whether the property is used or not, but if used it may provide complementary information about the resource
 
+.. _ada:subjectSchemeName:
+
 subject_scheme_name (M)
 -----------------------
 
@@ -170,5 +172,5 @@ To hold the JSON schema for different subject schemes. It will be used to create
    }
 
 .. note::
-The schemas showed here are all based on the product.yaml from a SAMIS's presentation. They will be updated once we have SAMIS final specification in site.
+   The schemas showed here are all based on the product.yaml from a SAMIS's presentation. They will be updated once we have SAMIS final specification in site.
    
