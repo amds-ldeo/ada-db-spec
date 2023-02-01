@@ -33,6 +33,70 @@ subject_scheme_template (M)
 ---------------------------
 To hold the JSON schema for different subject schemes. It will be used to create JSON object for column ``subject`` in the table ``record_subjects``.
 
+* ``analysis.general template`` 
+
+.. code-block:: json
+
+   {
+      "$schema": "https://json-schema.org/draft/2019-09/schema",
+      "type": "object",
+      "title": "Analysis Technique Schema",
+      "required": [
+         "sessionId",
+         "analysisDate"
+      ],
+      "properties": {
+         "sessionId": {
+               "type": "string",
+               "examples": [
+                  ""
+               ]
+         },
+         "analysisDate": {
+               "type": "string",
+               "examples": [
+                  "2023-01-02"
+               ]
+         }
+      },
+      "examples": [{
+         "sessionId": "20230102_EMPA_UAZ_OREX-8",
+         "analysisDate": "2023-01-02"
+      }]
+   }
+
+* ``analysis.technique template`` 
+
+.. code-block:: json
+
+   {
+      "$schema": "https://json-schema.org/draft/2019-09/schema",
+      "type": "object",
+      "title": "Analysis Technique Schema",
+      "required": [
+         "name",
+         "identifier"
+      ],
+      "properties": {
+         "name": {
+               "type": "string",
+               "examples": [
+                  "Electron Microprobe Analysis"
+               ]
+         },
+         "identifier": {
+               "type": "string",
+               "examples": [
+                  "EMPA"
+               ]
+         }
+      },
+      "examples": [{
+         "name": "Electron Microprobe Analysis",
+         "identifier": "EMPA"
+      }]
+   }
+
 * ``analysis.instrument template`` 
 
 .. code-block:: json
@@ -62,5 +126,45 @@ To hold the JSON schema for different subject schemes. It will be used to create
       "examples": [{
          "name": "Cameca 100X",
          "identifier": "CAM100"
+      }]
+   }
+
+   * ``analysis.laboratory template`` 
+
+.. code-block:: json
+
+   {
+      "$schema": "https://json-schema.org/draft/2019-09/schema",
+      "type": "object",
+      "title": "Analysis Laboratory Schema",
+      "required": [
+         "name",
+         "abbreviation",
+         "ror"
+      ],
+      "properties": {
+         "name": {
+               "type": "string",
+               "examples": [
+                  "University of Arizona"
+               ]
+         },
+         "abbreviation": {
+               "type": "string",
+               "examples": [
+                  "UAZ"
+               ]
+         },
+         "ror": {
+               "type": "string",
+               "examples": [
+                  "https://ror.org/03m2x1q45"
+               ]
+         }
+      },
+      "examples": [{
+         "name": "University of Arizona",
+         "abbreviation": "UAZ",
+         "ror": "https://ror.org/03m2x1q45"
       }]
    }
