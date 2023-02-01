@@ -168,3 +168,7 @@ To hold the JSON schema for different subject schemes. It will be used to create
          "ror": "https://ror.org/03m2x1q45"
       }]
    }
+
+   .. note::
+   The schemas showed here are all based on the product.yaml from a SAMIS's presentation. They will be updated once we have SAMIS final specification in site.
+   
