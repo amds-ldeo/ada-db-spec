@@ -14,11 +14,12 @@ Contents
 .. toctree::
 
    common_conventions
-   records
-   subject_schemes
-   record_subjects
    external_identifier_schemes
    file_extensions
    funders
    licenses
    name_entities
+   subject_schemes
+   records
+   record_subjects
+   record_contributors
