@@ -129,7 +129,7 @@ To hold the JSON schema for different subject schemes. It will be used to create
       }]
    }
 
-   * ``analysis.laboratory template`` 
+* ``analysis.laboratory template`` 
 
 .. code-block:: json
 
