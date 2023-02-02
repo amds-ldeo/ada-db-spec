@@ -44,7 +44,7 @@ Example (datacite)
     }
   ]
 
-.. _ada:general_type:
+.. _ada:recordGeneralType:
 
 general_type (M)
 -----------------------

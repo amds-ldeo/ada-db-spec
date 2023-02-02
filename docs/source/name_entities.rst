@@ -20,6 +20,7 @@ Optional (O)
 
 ``datacite``: https://schema.datacite.org/meta/kernel-4.4/
 
+.. _ada:nameType:
 
 name_type (M)
 --------------

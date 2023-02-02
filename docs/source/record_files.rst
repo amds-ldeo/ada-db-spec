@@ -29,6 +29,8 @@ file_checksum (M)
 -----------------
 samis:dataProduct:manifest:checksum
 
+.. _ada:recordFileGeneralType:
+
 general_type (MA)
 --------------------------------
 `samis:DSD <https://osiris-rex.atlassian.net/wiki/spaces/SDPD/pages/449216529/Data+Standards+Documents+DSD>`_

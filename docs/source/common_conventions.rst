@@ -40,10 +40,10 @@ This approach works well for controlled lists with a small number of values that
 
 * ``Usage``
 
-  * Column :ref:`ada:general_type` and ``doi_status`` in table ``records``
-  * Column ``contributor_type`` in table ``record_contributors``
-  * Column ``name_type`` in table ``name_entities``
-  * Column ``general_type`` in table ``record_files``
+  * Column :ref:`ada:recordGeneralType` and ``doi_status`` in table ``records``
+  * Column :ref:`ada:contributorType` in table ``record_contributors``
+  * Column :ref:`ada:nameType` in table ``name_entities``
+  * Column :ref:`ada:recordFileGeneralType` in table ``record_files``
 
 **Foreign Key**
 
