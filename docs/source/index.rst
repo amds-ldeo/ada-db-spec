@@ -21,5 +21,7 @@ Contents
    name_entities
    subject_schemes
    records
-   record_subjects
    record_contributors
+   record_subjects
+   record_files
+

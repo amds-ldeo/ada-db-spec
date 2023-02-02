@@ -3,7 +3,7 @@ external_identifier_schemes
 The table `external_identifier_schemes <https://schema.astromat.org/ada/tables/external_identifier_schemes.html>`_ is to hold different identifier schemes allowed by ADA system.
 
 identifier schemes allowed by ADA
------------------------
+---------------------------------
 
 ============ =====================
 scheme_name  scheme_url
