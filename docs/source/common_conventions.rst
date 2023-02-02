@@ -1,6 +1,10 @@
 Common Conventions
 ==================
 
+Concept conventions
+------------------------
+Throughout this guide, we always use **record** to mean a digital resource created by a user in ADA. Equivalent to **resource** in `datacite schema <https://support.datacite.org/docs/datacite-metadata-schema-44>`_ and **data product** in `SAMIS data product Documents <https://osiris-rex.atlassian.net/wiki/spaces/SDPD/overview?homepageId=410484833>`_.
+
 Naming conventions
 ------------------------
 * identifiers (names of databases, tables, columns, etc): lower case with underscores, e.g. ``record_creators``.
