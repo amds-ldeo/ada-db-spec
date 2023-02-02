@@ -44,6 +44,8 @@ Example (datacite)
     }
   ]
 
+.. _ada:general_type:
+
 general_type (M)
 -----------------------
 
