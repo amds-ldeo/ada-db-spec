@@ -38,15 +38,15 @@ general_type (MA)
 general type allowd by ADA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* ``image``
+* ``Image``
 
-* ``document``
+* ``Document``
 
-* ``tabularData``
+* ``TabularData``
 
-* ``dataCube``
+* ``DataCube``
 
-* ``dataCollection`` 
+* ``DataCollection`` 
 
 specific_type (MA)
 --------------------------------

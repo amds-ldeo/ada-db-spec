@@ -111,6 +111,8 @@ record_doi (MA)
 
 It must be populated once the doi is assigned by datacite.
 
+.. _ada:doiStatus:
+
 doi_status (MA)
 -----------------------
 

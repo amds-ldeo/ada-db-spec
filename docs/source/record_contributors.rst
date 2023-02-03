@@ -1,6 +1,6 @@
 record_contributors
 ====================
-The table `record_contributors <https://schema.astromat.org/ada/tables/record_contributors.html>`_ is to hold contributors of the digital resources.
+The table `record_contributors <https://schema.astromat.org/ada/tables/record_contributors.html>`_ is to hold contributors of the record.
 
 **term conventions**
 
