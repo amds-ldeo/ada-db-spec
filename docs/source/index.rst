@@ -18,10 +18,14 @@ Contents
    file_extensions
    funders
    licenses
-   name_entities
    subject_schemes
+   name_entities
+   name_entity_identifiers
    records
+   record_creators
    record_contributors
-   record_subjects
    record_files
+   record_fundings
+   record_licenses
+   record_subjects
 
