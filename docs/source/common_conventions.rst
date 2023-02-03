@@ -46,4 +46,13 @@ This approach works well for controlled lists with a small number of values that
   * Column :ref:`ada:recordFileGeneralType` in table ``record_files``
 
 **Foreign Key**
+This approach store the controlled lists in a table instead of being part of the schema. Foreign keys are used to ensure the validity of the values in the target tables.
 
+* ``Usage``
+
+  * Table ``external_identifier_schemes`` used by table ``name_entity_identifiers``
+  * Table ``subject_schemes`` used by table ``record_subjects``
+  * Table ``file_extensions`` used by table ``record_files``
+  * Table ``funders`` used by table ``record_fundings``
+  * Table ``licenses`` used by table ``record_licenses``
+  * Table ``process_statuses`` used by table ``records``
