@@ -148,3 +148,19 @@ Example (datacite)
       "dateType": "Available"
     },
   ]
+
+  submission_type (M)
+-----------------------
+
+* ``Regular`` (default): Indicate the record was submitted by an individual
+* ``BundleDelivery``: Indicate the record was submitted by SAMIS
+
+  process_status (M)
+-----------------------
+
+* ``Accepted``(default): A new record is created in ADA.
+* ``Submitted``: The record is submitted by user for review when have finished uploading data files and filling in all required metadata. 
+* ``InReview``
+* ``Published``
+* ``Rejected``
+* ``Archived``
