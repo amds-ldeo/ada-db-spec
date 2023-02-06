@@ -43,6 +43,12 @@ In ADA, value list is used when a column's values are restricted to valid pickli
 * **DOI Status Value List**
 
   * Column :ref:`ada:doiStatus` in table ``records``
+* **Submission Type Value List**
+
+  * Column :ref:`ada:submissionType` in table ``records``
+* **Process Status Value List**
+
+  * Column :ref:`ada:processStatus` in table ``records``
 * **Contributor Type Value List**
 
   * Column :ref:`ada:contributorType` in table ``record_contributors``
@@ -75,4 +81,3 @@ This approach store the controlled lists in a table instead of being part of the
   * Table ``file_extensions`` used by table ``record_files``
   * Table ``funders`` used by table ``record_fundings``
   * Table ``licenses`` used by table ``record_licenses``
-  * Table ``process_statuses`` used by table ``records``
