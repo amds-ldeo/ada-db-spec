@@ -158,7 +158,7 @@ submission_type (M)
 process_status (M)
 -----------------------
 
-* ``Accepted``(default): A new record is created in ADA.
+* ``Accepted`` (default): A new record is created in ADA.
 * ``Submitted``: The record is submitted by user for review when have finished uploading data files and filling in all required metadata. 
 * ``InReview``
 * ``Published``
