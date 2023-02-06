@@ -149,13 +149,13 @@ Example (datacite)
     },
   ]
 
-  submission_type (M)
+submission_type (M)
 -----------------------
 
 * ``Regular`` (default): Indicate the record was submitted by an individual
 * ``BundleDelivery``: Indicate the record was submitted by SAMIS
 
-  process_status (M)
+process_status (M)
 -----------------------
 
 * ``Accepted``(default): A new record is created in ADA.
