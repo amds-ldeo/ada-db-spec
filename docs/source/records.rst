@@ -132,25 +132,9 @@ Example
 
    UPDATE records SET doi_issued_date = '2023-01-31';
 
-publication_date (MA)
+days_until_release (M)
 -----------------------
-datacite:date (R) with datacite:dateType:Available
-
-The format is ``YYYY-MM-DD``, should be populated with the value of column ``updated_at`` when doi_status is changed to ``Findable`` if user does not provide it.
-
-.. note::
-   ``publication_date`` must be after ``updated_at`` when ``doi_status`` changed to ``Findable``
-
-Example (datacite)
-~~~~~~~~~~~~~~~~~~~
-.. code-block:: json
-
-  "dates": [
-    {
-      "date": "2023-01-30",
-      "dateType": "Available"
-    },
-  ]
+Indicate how many days after ``doi_status`` is changed to ``Findable`` the resource (data files) is publicly available.
 
 .. _ada:submissionType:
 
