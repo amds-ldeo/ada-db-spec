@@ -116,7 +116,7 @@ It must be populated once the doi is assigned by datacite.
 doi_status (MA)
 -----------------------
 
-Specify the states of DOI assigned by datacite. It must be populated with one of the following controlled list once the doi is assigned by datacite.
+Specify `the states of DOI <https://support.datacite.org/docs/doi-states>`_ assigned by datacite. It must be populated with one of the following controlled list once the doi is assigned by datacite.
 
 * ``Draft``
 * ``Findable``
@@ -137,6 +137,9 @@ publication_date (MA)
 datacite:date (R) with datacite:dateType:Available
 
 The format is ``YYYY-MM-DD``, should be populated with the value of column ``updated_at`` when doi_status is changed to ``Findable`` if user does not provide it.
+
+.. note::
+   ``publication_date`` must be after ``updated_at`` when ``doi_status`` changed to ``Findable``
 
 Example (datacite)
 ~~~~~~~~~~~~~~~~~~~
