@@ -7,7 +7,7 @@ Throughout this guide, we always use **record** to mean a digital resource creat
 
 Naming conventions
 ------------------------
-* identifiers (names of databases, tables, columns, etc): comply with `snake case <https://en.wikipedia.org/wiki/Snake_case>`_, e.g. ``record_creators``, ``records``.
+* identifiers (names of tables, columns, etc): comply with `snake case <https://en.wikipedia.org/wiki/Snake_case>`_, e.g. ``record_creators``, ``records``.
 * table name: should be named using a plural word, e.g. ``records``.
 * id column (primary key): use ``id``.
 * id column (foreign key): use the table name (singular) followd by “id” (e.g. record_id).
