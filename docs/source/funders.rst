@@ -6,7 +6,7 @@ funders allowed by ADA
 -----------------------
 
 ============== ============================================= ==================================
-funder_abbrev  funder_name                                   funder_url
+abbreviation   name                                          url
 ============== ============================================= ==================================
 NASA   	       National Aeronautics and Space Administration https://doi.org/10.13039/100000104
 NSF   	       US National Science Foundation      	         https://doi.org/10.13039/100000001
@@ -21,6 +21,6 @@ Metadata mappings
 ======================= =========================
 ADA Column              Datacite property   
 ======================= =========================
-funder_name             datacite:funderName
-funder_url              datacite:funderIdentifier
+name                    datacite:funderName
+url                     datacite:funderIdentifier
 ======================= =========================

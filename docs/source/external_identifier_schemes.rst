@@ -6,7 +6,7 @@ identifier schemes allowed by ADA
 ---------------------------------
 
 ============ =====================
-scheme_name  scheme_url
+name         url
 ============ =====================
 DOI	         https://doi.org/
 ORCID	     https://orcid.org/
@@ -23,6 +23,6 @@ Metadata mappings
 ======================= =========================
 ADA Column              Datacite property   
 ======================= =========================
-scheme_name             datacite:identifierType/affiliationIdentifierScheme/nameIdentifierScheme
-scheme_url              datacite:schemeURI
+name                    datacite:identifierType/affiliationIdentifierScheme/nameIdentifierScheme
+url                     datacite:schemeURI
 ======================= =========================

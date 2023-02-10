@@ -21,11 +21,11 @@ Optional (O)
 
 ``samis``: https://osiris-rex.atlassian.net/wiki/spaces/SDPD/pages/449544195/Bundle+Delivery+Documents+BDD
 
-file_name (M)
+name (M)
 --------------
 samis:dataProduct:manifest:fileName
 
-file_checksum (M)
+checksum (M)
 -----------------
 samis:dataProduct:manifest:checksum
 

@@ -6,7 +6,7 @@ file name extensions allowed by ADA
 -----------------------
 
 ============== ================================ ========================= ======================================================================
-file_extension file_type_name                   media_type                desc_url
+extension      type_name                        media_type                description_url
 ============== ================================ ========================= ======================================================================
 .yaml	         YAML	                            application/yaml	        https://yaml.org/spec/1.2.2/
 .mzML	         mzML		                                                    https://www.psidev.info/mzML

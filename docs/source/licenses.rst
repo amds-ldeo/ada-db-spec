@@ -7,7 +7,7 @@ Licenses allowed by ADA
 All licenses are seleted from `SPDX License List <https://spdx.org/licenses/>`_
 
 ======================= ============================================================================= ============================================
-liecense_abbrev         license_name                                                                  license_url
+abbreviation            name                                                                          url
 ======================= ============================================================================= ============================================
 CC-BY-NC-SA-3.0   	   Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States 	   https://spdx.org/licenses/CC-BY-SA-4.0
 CC-BY-NC-SA-4.0   	   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International      	https://spdx.org/licenses/CC-BY-NC-SA-4.0
@@ -25,9 +25,9 @@ Metadata mappings
 ======================= =======================
 ADA Column              Datacite property   
 ======================= =======================
-liecense_abbrev         datacite:rightsIdentifier
-license_name            datacite:Rights
-license_url             datacite:rightsURI
+abbreviation            datacite:rightsIdentifier
+name                    datacite:Rights
+url                     datacite:rightsURI
 ======================= =======================
 
 Example (datacite)

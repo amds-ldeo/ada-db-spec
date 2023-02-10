@@ -22,7 +22,7 @@ Optional (O)
 subject_scheme_id (M)
 ---------------------
 
-* :ref:`ada:subjectSchemeName`
+* :ref:`ada:subjectSchemaName`
 
 subject (M)
 -----------

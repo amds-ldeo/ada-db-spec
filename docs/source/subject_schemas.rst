@@ -1,6 +1,6 @@
-subject_schemes
+subject_schemas
 ================
-The table `subject_schemes <https://schema.astromat.org/ada/tables/subject_schemes.html>`_ is to hold unambiguous subject schemes allowed by ADA system.
+The table `subject_schemas <https://schema.astromat.org/ada/tables/subject_schemas.html>`_ is to hold json schemas of different subject(object) approved by ADA system, e.g. analysis object, sample object.
 
 It is used with table ``record_subjects`` to store more scientific metadata related to the ``record``, etc. SAMIS data product.
 
@@ -18,11 +18,11 @@ Recommended (R)
 Optional (O)
   It is not important whether the property is used or not, but if used it may provide complementary information about the resource
 
-.. _ada:subjectSchemeName:
+.. _ada:subjectSchemaName:
 
-subject_scheme_name (M)
+name (M)
 -----------------------
-
+Name of subject (object), e.g. 
 All schemes can be found in SAMIS data product metadata.
 
 * ``sample``
@@ -33,7 +33,7 @@ All schemes can be found in SAMIS data product metadata.
 
 .. _ada:subjectSchema:
 
-subject_scheme_template (M)
+json_schema (M)
 ---------------------------
 To hold the JSON schema for different subject schemes. It will be used to create JSON object for column ``subject`` in the table ``record_subjects``.
 
