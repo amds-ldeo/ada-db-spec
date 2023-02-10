@@ -3,15 +3,23 @@ Common Conventions
 
 Concept conventions
 ------------------------
-Throughout this guide, we always use **record** to mean a digital resource created by a user in ADA. Equivalent to **resource** in `datacite schema <https://support.datacite.org/docs/datacite-metadata-schema-44>`_ and **data product** in `SAMIS data product Documents <https://osiris-rex.atlassian.net/wiki/spaces/SDPD/overview?homepageId=410484833>`_.
+* use **record** to mean a digital resource stored in table ``records`` created by a user in ADA. Equivalent to **resource** in `datacite schema <https://support.datacite.org/docs/datacite-metadata-schema-44>`_ and **data product** in `SAMIS data product Documents <https://osiris-rex.atlassian.net/wiki/spaces/SDPD/overview?homepageId=410484833>`_.
+* use pair **[row, column]** instead of **[record, field]** to represent table composition.
 
 Naming conventions
 ------------------------
-* identifiers (names of tables, columns, etc): comply with `snake case <https://en.wikipedia.org/wiki/Snake_case>`_, e.g. ``record_creators``, ``records``.
+* identifiers (names of tables, columns, etc): 
+
+  * use full language words for all object names, e.g. use ``number`` instead of ``num``.
+  * comply with `snake case <https://en.wikipedia.org/wiki/Snake_case>`_, e.g. ``record_creators``, ``records``.
 * table name: should be named using a plural word, e.g. ``records``.
 * id column (primary key): use ``id``.
 * id column (foreign key): use the table name (singular) followd by “id” (e.g. record_id).
 * value list: comply with `upper camel case <https://en.wikipedia.org/wiki/Camel_case>`_, e.g. ``PhysicalObject``, ``Service``.
+
+Character type
+------------------------
+Use the ``text`` data type for columns that store strings.
 
 SERIAL type id column
 ------------------------
@@ -24,7 +32,7 @@ that is automatically assigned by the database server when a new row is inserted
 
 Two automatic timestamps
 ------------------------
-There are two timestamp columns ``created_at`` and ``updated_at`` present in all tables.
+There are two timestamp columns ``created_at`` and ``updated_at`` present in most tables.
 Both of them are set to ``NOW()`` defaultly in each table. Each table also has a 
 trigger ``set_timestamp`` that will execute the `trigger_set_timestamp <https://schema.astromat.org/ada/routines/trigger_set_timestamp___8ec213b3.html>`_ function 
 , which will do so whenever a row is updated in the table. Both the ``created_at`` and 
