@@ -1,9 +1,5 @@
-Template for the Read the Docs tutorial
+ADA Database Guidelines for Developers
 =======================================
+The intention of this is to provide documents about ADA database based on `ADA database schema <https://schema.astromat.org/ada/index.html>`_.
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+Head over to https://ada-db-spec.readthedocs.io/en/latest/index.html to read the guidelines.
