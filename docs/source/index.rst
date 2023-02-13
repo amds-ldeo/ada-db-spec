@@ -14,6 +14,7 @@ Contents
 .. toctree::
 
    common_conventions
+   lifecycle_of_record
    external_identifier_schemes
    file_extensions
    funders
