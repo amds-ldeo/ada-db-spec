@@ -75,4 +75,4 @@ The record created like below
 
 * 2.5 ADA ? endpoint scoop datacite required metadata from ADA database and send it with request ``update doi``, change state to ``findable``
 
-* 2.6 ADA ? endpoint execute ``update operation`` on table ``records`` of ADA database with response from datacite, change ``process_status`` to ``Published``  and send back to SAMIS
+* 2.6 ADA ? endpoint execute ``update operation`` on table ``records`` of ADA database with response from datacite, change ``doi_status`` to ``Findable`` and ``process_status`` to ``Published``, then send back to SAMIS
