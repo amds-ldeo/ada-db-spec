@@ -4,12 +4,13 @@ Lifecycle of the record
 1. Record creation process
 ------------------------
 
-* 1.1 SAMIS send request ``create record`` to ADA API endpoint with minimum metadata requirement(title, creators)
+* 1.1 SAMIS send request ``create record`` to ADA API endpoint with minimum metadata requirement(title, submissionType, creators)
 
 .. code-block:: json
 
    {
      "title": "create a samis record in ADA",
+     "submissionType": "BundleDelivery",
      "creators" : [
          {
             "name": "JI, PENG",
