@@ -98,7 +98,7 @@ Lifecycle of the record
 
     .. code-block:: sql
 
-    insert into record_creators(record_id, name_entity_id) values (1, 1) returning *;
+      insert into record_creators(record_id, name_entity_id) values (1, 1) returning *;
 
     The row created like below
 
