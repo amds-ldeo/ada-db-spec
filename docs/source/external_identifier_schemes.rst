@@ -12,6 +12,7 @@ DOI	         https://doi.org/
 ORCID	     https://orcid.org/
 ROR	         https://ror.org/
 IGSN	     https://igsn.org/
+email        
 ============ =====================
 
 Metadata mappings
