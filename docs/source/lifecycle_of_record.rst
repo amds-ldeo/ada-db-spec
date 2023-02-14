@@ -4,7 +4,7 @@ Lifecycle of the record
 1. Record creation process
 ------------------------
 
-* 1.1 SAMIS send request ``create record`` to ADA API endpoint with minimum metadata requirement(title)
+* 1.1 SAMIS send request ``create record`` to ADA API endpoint with minimum metadata requirement(title, creators)
 
 .. code-block:: json
 
@@ -101,7 +101,7 @@ Lifecycle of the record
     insert into record_creators(record_id, name_entity_id) values (1, 1) returning *;
 
     The row created like below
-    
+
     +----+-----------+----------------+-------------------------+-------------------------+
     | id | record_id | name_entity_id | created_at              | updated_at              |
     +====+===========+================+=========================+=========================+
