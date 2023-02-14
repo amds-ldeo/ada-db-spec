@@ -184,7 +184,10 @@ The example of minimum metadata
 2. Record submission process
 -----------------------------
 
-* 2.1 SAMIS send request ``submit record`` to ADA API endpoint with required metada
+.. note::
+  For SAMIS scenarios, the submission can be processed automatically without calling API endpoint to trigger.
+
+* 2.1 User send request ``submit record`` to ADA API endpoint with required metada
 
 .. note::
    Must ensure all relevant files have been uploaded to S3 before sending the request
@@ -201,7 +204,7 @@ The example of minimum metadata
 .. code-block:: sql
    update records set process_status='Submitted' where doi='10.5438/0012';
 
-* 2.3 SAMIS data validation process is triggered and the ``procss_status`` is changed to ``InReview``
+* 2.3 Data validation process is triggered and the ``procss_status`` is changed to ``InReview``
   
   * 2.3.1 if data is not validated, the ``process_status`` is changed to ``Reject``, request ``modify and re-submit`` is sent back to SAMIS
   
@@ -211,4 +214,4 @@ The example of minimum metadata
 
 * 2.5 ADA ? endpoint scoop datacite required metadata from ADA database and send it with request ``update doi``, change state to ``findable``
 
-* 2.6 ADA ? endpoint execute ``update operation`` on table ``records`` of ADA database with response from datacite, change ``doi_status`` to ``Findable`` and ``process_status`` to ``Published``, then send back to SAMIS
+* 2.6 ADA ? endpoint execute ``update operation`` on table ``records`` of ADA database with response from datacite, change ``doi_status`` to ``Findable`` and ``process_status`` to ``Published``, then send back to user.
