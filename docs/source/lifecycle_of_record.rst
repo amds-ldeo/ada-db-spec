@@ -1,10 +1,74 @@
 Lifecycle of the record
 ========================
 
+.. note::
+  Suitable for both conventional and SAMIS scenarios
+
 1. Record creation process
 ------------------------
 
-* 1.1 SAMIS send request ``create record`` to ADA API endpoint with minimum metadata requirement(title, submissionType, creators)
+* 1.1 User send request ``create record`` to ADA API endpoint with minimum metadata requirement(title, submissionType, creators)
+
+The JSON schema of minimum metadata for record creation
+
+.. code-block:: json
+
+  {
+      "$schema": "https://json-schema.org/draft/2019-09/schema",
+      "type": "object",
+      "title": "Minimum metadata for record creation",
+      "required": [
+          "title",
+          "submissionType",
+          "creators"
+      ],
+      "properties": {
+          "title": {
+              "type": "string"
+          },
+          "submissionType": {
+              "type": "string",
+              "enum": [
+                  "Regular",
+                  "BundleDelivery"
+              ]
+          },
+          "creators": {
+              "type": "array",
+              "items": {
+                  "type": "object",
+                  "required": [
+                      "name",
+                      "nameType",
+                      "ORCID",
+                      "email"
+                  ],
+                  "properties": {
+                      "name": {
+                          "type": "string"
+                      },
+                      "nameType": {
+                          "type": "string",
+                          "enum": [
+                              "Personal",
+                              "Organizational"
+                          ]
+                      },
+                      "ORCID": {
+                          "type": "string"
+                      },
+                      "email": {
+                          "type": "string"
+                      }
+                  }
+              },
+              "minItems": 1,
+              "uniqueItems": true
+          }
+      }
+  }
+
+The example of minimum metadata 
 
 .. code-block:: json
 
@@ -14,7 +78,9 @@ Lifecycle of the record
      "creators" : [
          {
             "name": "JI, PENG",
-            "ORCID": "0000-0003-1868-5004"
+            "nameType": "Personal",
+            "ORCID": "0000-0003-1868-5004",
+            "email": "pengji@ldeo.columbia.edu"
          }
      ]
    }
@@ -113,6 +179,7 @@ Lifecycle of the record
 
 2. Record submission process
 -----------------------------
+
 * 2.1 SAMIS send request ``submit record`` to ADA API endpoint with required metada
 
 .. note::
