@@ -10,6 +10,12 @@ Lifecycle of the record
 
    {
      "title": "create a samis record in ADA",
+     "creators" : [
+         {
+            "name": "JI, PENG",
+            "ORCID": "0000-0003-1868-5004"
+         }
+     ]
    }
 
 * 1.2 ADA API endpoint send request ``create draft record`` to datacite API endpoint and get the responding from datacite looks like below(partial), find full example at https://support.datacite.org/docs/api-create-dois
@@ -30,19 +36,77 @@ Lifecycle of the record
      },
    }
 
-* 1.3 ADA API excute ``create operation`` on table ``records`` of ADA database
+* 1.3 ADA API ingest data into ADA database
 
-.. code-block:: sql
+  * 1.3.1 Excute ``create operation`` on table ``records``
 
-   insert into records(title, submission_type, doi, doi_status, doi_issued_date) values('create a samis record in ADA','BundleDelivery','10.5438/0012','Draft','2016-09-19') returing *;
+  .. code-block:: sql
 
-The record created like below
+    insert into records(title, submission_type, doi, doi_status, doi_issued_date) values('create a samis record in ADA','BundleDelivery','10.5438/0012','Draft','2016-09-19') returing *;
 
-+----+------------------------------+-------------+-----------------+--------------+---------------+--------------+--------------------+-----------------+------------+----------------+-------------------------+-------------------------+
-| id | title                        | description | submission_type | general_type | specific_type | doi          | days_until_release | doi_issued_date | doi_status | process_status | created_at              | updated_at              |
-+====+==============================+=============+=================+==============+===============+==============+====================+=================+============+================+=========================+=========================+
-| 1  | create a samis record in ADA |             | BundleDelivery  | Dataset      |               | 10.5438/0012 | 0                  | 2016-09-19      | Draft      | Accepted       | 2023-02-13 10:20:38.372 | 2023-02-13 10:20:38.372 |
-+----+------------------------------+-------------+-----------------+--------------+---------------+--------------+--------------------+-----------------+------------+----------------+-------------------------+-------------------------+
+  The record created like below
+
+  +----+------------------------------+-------------+-----------------+--------------+---------------+--------------+--------------------+-----------------+------------+----------------+-------------------------+-------------------------+
+  | id | title                        | description | submission_type | general_type | specific_type | doi          | days_until_release | doi_issued_date | doi_status | process_status | created_at              | updated_at              |
+  +====+==============================+=============+=================+==============+===============+==============+====================+=================+============+================+=========================+=========================+
+  | 1  | create a samis record in ADA |             | BundleDelivery  | Dataset      |               | 10.5438/0012 | 0                  | 2016-09-19      | Draft      | Accepted       | 2023-02-13 10:20:38.372 | 2023-02-13 10:20:38.372 |
+  +----+------------------------------+-------------+-----------------+--------------+---------------+--------------+--------------------+-----------------+------------+----------------+-------------------------+-------------------------+
+
+  * 1.3.2 Ingest creator infomation into ADA database
+    * 1.3.2.1 Excute ``read operation`` on view ``v_name_entities``
+
+    .. code-block:: sql
+      select * from v_name_entities where identifier_type='ORCID' and identifier='0000-0003-1868-5004'
+    
+    * 1.3.2.2 Excute ``create operation`` on table ``name_entities`` if the person does not exist in ADA database
+
+    .. code-block:: sql
+
+      insert into name_entities(full_name, family_name, given_name) values ('JI, PENG', 'JI', 'PENG') returning *;
+
+    The row created like below
+
+    +----+-----------+-----------+-------------+------------+-------------------------+-------------------------+
+    | id | full_name | name_type | family_name | given_name | created_at              | updated_at              |
+    +====+===========+===========+=============+============+=========================+=========================+
+    | 1  | JI, PENG  | Personal  | JI          | PENG       | 2023-02-14 08:59:01.568 | 2023-02-14 08:59:01.568 |
+    +----+-----------+-----------+-------------+------------+-------------------------+-------------------------+
+
+    * 1.3.2.3 Excute ``create operation`` on table ``name_entity_identifiers`` 
+
+    .. code-block:: sql
+
+      insert into name_entity_identifiers(name_entity_id, external_identifier_scheme_id, identifier) values (1, 2, '0000-0003-1868-5004') returning *;
+
+    The row created like below
+
+    +----+----------------+-------------------------------+---------------------+-------------------------+-------------------------+
+    | id | name_entity_id | external_identifier_scheme_id | identifier          | created_at              | updated_at              |
+    +====+================+===============================+=====================+=========================+=========================+
+    | 1  | 1              | 2                             | 0000-0003-1868-5004 | 2023-02-14 09:09:06.905 | 2023-02-14 09:09:06.905 |
+    +----+----------------+-------------------------------+---------------------+-------------------------+-------------------------+
+
+    Check view ``v_name_entities`` again, returning like below
+
+    +----+-----------+-----------+-------------+------------+-----------------+---------------------+
+    | id | full_name | name_type | family_name | given_name | identifier_type | identifier          |
+    +====+===========+===========+=============+============+=================+=====================+
+    | 1  | JI, PENG  | Personal  | JI          | PENG       | ORCID           | 0000-0003-1868-5004 |
+    +----+-----------+-----------+-------------+------------+-----------------+---------------------+
+
+    * 1.3.2.4 Excute ``create operation`` on table ``record_creators`` 
+
+    .. code-block:: sql
+
+    insert into record_creators(record_id, name_entity_id) values (1, 1) returning *;
+
+    The row created like below
+    
+    +----+-----------+----------------+-------------------------+-------------------------+
+    | id | record_id | name_entity_id | created_at              | updated_at              |
+    +====+===========+================+=========================+=========================+
+    | 1  | 1         | 1              | 2023-02-14 09:22:38.372 | 2023-02-14 09:22:38.372 |
+    +----+-----------+----------------+-------------------------+-------------------------+
 
 * 1.4 ADA API send record created in ADA back to SAMIS
 
