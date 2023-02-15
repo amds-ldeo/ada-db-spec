@@ -124,7 +124,7 @@ Specify `the states of DOI <https://support.datacite.org/docs/doi-states>`_ assi
 doi_issued_date (MA)
 -----------------------
 
-It represent the date that the doi is assigned by datacite, must be populated with the format ``YYYY-MM-DD`` once the doi is assigned by datacite.
+It represent the date that the doi is assigned by datacite, must be populated with the format ``YYYY-MM-DD``.
 
 Example
 ~~~~~~~
@@ -134,7 +134,7 @@ Example
 
 days_until_release (M)
 -----------------------
-Indicate how many days after ``doi_status`` is changed to ``Findable`` the resource (data files) is publicly available.
+Indicate how many days after ``doi_status`` is changed to ``Findable`` the resource, especially associated data files are publicly accessiable and downloadable. The default value is 0 means both record's metadata and associated data files are publicly accessiable and downloadable once the state of DOI is set to ``Findable``.
 
 .. _ada:submissionType:
 
