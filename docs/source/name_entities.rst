@@ -1,6 +1,6 @@
 name_entities
 =============
-The table `name_entities <https://schema.astromat.org/ada/tables/name_entities.html>`_ is to hold different funder information allowed by ADA system.
+The table `name_entities <https://schema.astromat.org/ada/tables/name_entities.html>`_ is to hold Personal/Organizational names. The table is always used with tables ``record_creators``, ``record_contributors``, and ``name_entity_identifiers`` to store profile of the creator/contributor.
 
 **term conventions**
 
