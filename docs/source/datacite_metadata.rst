@@ -8,7 +8,9 @@ Generate metadata compliant with Datacite requirements
 
 datacite:creator (M)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The view `v_datacite_creators <https://schema.astromat.org/ada/tables/v_datacite_creators.html>`_ is to create JSON object with datacite required metadata for creator.
+The view ``view_datacite_creators_v**`` is to create JSON object with datacite required metadata for creator based on specific datacite schema version.
+
+`version 4.3 view_datacite_creators_v43 <https://schema.astromat.org/ada/tables/view_datacite_creators_v43.html>`_
 
 +-----------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | record_id | name_entity_id | creator                                                                                                                                                                                |
@@ -16,10 +18,20 @@ The view `v_datacite_creators <https://schema.astromat.org/ada/tables/v_datacite
 | 1         | 1              | {"name": "JI, PENG", "nameType": "Personal", "givenName": "PENG", "familyName": "JI", "nameIdentifiers": [{"nameIdentifier": "0000-0003-1868-5004", "nameIdentifierScheme": "ORCID"}]} |
 +-----------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+`version 4.4 view_datacite_creators_v44 <https://schema.astromat.org/ada/tables/view_datacite_creators_v44.html>`_
+
++-----------+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| record_id | name_entity_id | creator                                                                                                                                                                                       |
++===========+================+===============================================================================================================================================================================================+
+| 1         | 1              | {"creatorName": "JI, PENG", "nameType": "Personal", "givenName": "PENG", "familyName": "JI", "nameIdentifiers": [{"nameIdentifier": "0000-0003-1868-5004", "nameIdentifierScheme": "ORCID"}]} |
++-----------+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 
 datacite:contributor (R)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The view `v_datacite_contributors <https://schema.astromat.org/ada/tables/v_datacite_contributors.html>`_ is to create JSON object with datacite required metadata for contributor.
+The view ``view_datacite_contributors_v**`` is to create JSON object with datacite required metadata for contributor based on specific datacite schema version.
+
+`version 4.3  view_datacite_contributors_v43 <https://schema.astromat.org/ada/tables/view_datacite_contributors_v43.html>`_
 
 +-----------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | record_id | name_entity_id | contributor                                                                                                                                                                      |
@@ -30,3 +42,15 @@ The view `v_datacite_contributors <https://schema.astromat.org/ada/tables/v_data
 +-----------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 1         | 4              | {"name": "SAMIS", "nameType": "Organizational", "contributorType": "RightsHolder", "nameIdentifiers": [{"nameIdentifier": "027ka1x80", "nameIdentifierScheme": "ROR"}]}          |
 +-----------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+`version 4.4 view_datacite_contributors_v44 <https://schema.astromat.org/ada/tables/view_datacite_contributors_v44.html>`_
+
++-----------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| record_id | name_entity_id | contributor                                                                                                                                                                                 |
++===========+================+=============================================================================================================================================================================================+
+| 1         | 2              | {"contributorName": "JI, test1", "nameType": "Personal", "contributorType": "RelatedPerson", "nameIdentifiers": []}                                                                         |
++-----------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1         | 3              | {"contributorName": "JI, test2", "nameType": "Personal", "contributorType": "DataCurator", "nameIdentifiers": [{"nameIdentifier": "0000-0003-1868-5005", "nameIdentifierScheme": "ORCID"}]} |
++-----------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1         | 4              | {"contributorName": "SAMIS", "nameType": "Organizational", "contributorType": "RightsHolder", "nameIdentifiers": [{"nameIdentifier": "027ka1x80", "nameIdentifierScheme": "ROR"}]}          |
++-----------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
