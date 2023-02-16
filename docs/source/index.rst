@@ -15,6 +15,7 @@ Contents
 
    common_conventions
    lifecycle_of_record
+   datacite_metadata
    external_identifier_schemes
    file_extensions
    funders
