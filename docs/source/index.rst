@@ -8,7 +8,7 @@ These guidelines describe `the ADA database <https://schema.astromat.org/ada/ind
 
    This project is under active development.
 
-Contents
+General
 --------
 
 .. toctree::
@@ -17,6 +17,13 @@ Contents
    lifecycle_of_record
    record_deletion
    datacite_metadata
+
+
+Tables
+--------
+
+.. toctree::
+
    external_identifier_schemes
    file_extensions
    funders
@@ -31,4 +38,3 @@ Contents
    record_fundings
    record_licenses
    record_subjects
-
