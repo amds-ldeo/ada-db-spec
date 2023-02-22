@@ -15,6 +15,7 @@ Contents
 
    common_conventions
    lifecycle_of_record
+   record_deletion
    datacite_metadata
    external_identifier_schemes
    file_extensions
