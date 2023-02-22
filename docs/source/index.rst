@@ -12,6 +12,7 @@ General
 --------
 
 .. toctree::
+   :titlesonly:
 
    common_conventions
    lifecycle_of_record
@@ -23,6 +24,7 @@ Tables
 --------
 
 .. toctree::
+   :titlesonly:
 
    external_identifier_schemes
    file_extensions
