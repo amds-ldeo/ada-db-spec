@@ -19,13 +19,13 @@ Optional (O)
   It is not important whether the property is used or not, but if used it may provide complementary information about the resource
 
 
-subject_scheme_id (M)
+subject_schema_id (M)
 ---------------------
 
 * :ref:`ada:subjectSchemaName`
 
 subject (M)
 -----------
-Populate the data with the appropriate subject scheme and corresponding template.
+Populate the data with the appropriate subject schema and corresponding template. The column only accept single json object that conforms to the relevant subject schema.
 
 * :ref:`ada:subjectSchema`
