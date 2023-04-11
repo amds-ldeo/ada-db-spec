@@ -2,7 +2,7 @@ record_subjects
 ================
 The table `record_subjects <https://schema.astromat.org/ada/tables/record_subjects.html>`_ is to hold unambiguous subjects related to the record.
 
-It is used with table ``subject_schemes`` to store more scientific metadata related to the ``record``, etc. SAMIS data product.
+It is used with table ``subject_schemas`` to store more scientific metadata related to the ``record``, etc. SAMIS data product.
 
 **term conventions**
 
