@@ -38,16 +38,19 @@ general_type (MA)
 general type allowd by ADA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* ``Image``
+*image*
 
-* ``Document``
+*document*
 
-* ``TabularData``
+*tabularData*
 
-* ``DataCube``
+*dataCube*
 
-* ``DataCollection`` 
+*dataCollection* 
 
+*metadata*
+  Added by ADA to indicate whether the file content is metadata. It is always delivered with yaml file in SAMIS submission. 
+  
 specific_type (MA)
 --------------------------------
 samis:dataComponentType
